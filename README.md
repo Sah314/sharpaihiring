@@ -42,3 +42,10 @@ Defined 3 endpoints
 
 ### Deployment
 Deployed on vercel.
+You can connect your metamask wallet directly(If you have one) when depositing
+![image](https://github.com/Sah314/sharpaihiring/assets/82277915/dace95bd-7e7e-43f7-95cb-2b7f152fd97d)
+
+Your address will be immediately visible here:
+![image](https://github.com/Sah314/sharpaihiring/assets/82277915/41b68f0e-4ca5-47f9-b28d-0e4a8894af99)
+
+
