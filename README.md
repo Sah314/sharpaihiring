@@ -1,4 +1,4 @@
-# Frontend React Hiring challenge by Sharpe Ai Labs
+# Frontend React Hiring challenge by Sharpe AI Labs
 # By Sahil Khadayate
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
