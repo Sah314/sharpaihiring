@@ -1,0 +1,13 @@
+.spacer{
+    position: absolute;
+    aspect-ratio: 900/600;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+.layer1{
+    position: absolute;
+    background-image: url('../../public/layer.svg');
+}
