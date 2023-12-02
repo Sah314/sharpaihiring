@@ -5,19 +5,16 @@ import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import CssBaseline from '@mui/material/CssBaseline';
 import TextField from '@mui/material/TextField';
-
 import Grid from '@mui/material/Grid';
+import ArrowBackwardIosIcon from '@mui/icons-material/ArrowBackIosNew'
 import Box from '@mui/material/Box';
-//import Stack from '@mui/material/Stack';
-//import Button from '@mui/material/Button';
 import Snackbar from '@mui/material/Snackbar';
 import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import MuiAlert from '@mui/material/Alert';
-import { ethers } from "ethers";
-
+import { useNavigate } from 'react-router';
 const Alert = React.forwardRef(function Alert(props, ref) {
     return <MuiAlert elevation={6} ref={ref} variant="filled" {...props} />;
   });
@@ -32,7 +29,7 @@ const Transaction=()=>{
     const [currentAccount,setCurrentAccount]=React.useState("");
     const [isLoading,setIsLoading]=React.useState(false);
     const [open, setOpen] = React.useState(false);
-
+    const navigate  = useNavigate();
     console.log(currentAccount)
     const checkIfWalletConnected= async()=>{
        // checkNetwork();
@@ -143,8 +140,15 @@ const Transaction=()=>{
 
   return (
     <ThemeProvider theme={defaultTheme}>
+
       <Container component="main" maxWidth="xs">
         <CssBaseline />
+        <div className='absolute left-9 top-8'>
+        <Button variant="contained" color='secondary' endIcon={<ArrowBackwardIosIcon />} onClick={()=>navigate('/')}>
+Homepage
+</Button>
+        </div>
+        
         <Box
           sx={{
             marginTop: 8,
